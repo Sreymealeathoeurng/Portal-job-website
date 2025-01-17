@@ -30,7 +30,7 @@ export default function Footer() {
               <li><a onClick={() => navigate('./home')} style={{ cursor: 'pointer' }} >Home</a></li>
               <li><a onClick={() => navigate('./home')} style={{ cursor: 'pointer' }}>Job</a></li>
               <li><a onClick={() => navigate('./home')} style={{ cursor: 'pointer' }}>Careers</a></li>
-              <li><a onClick={() => navigate('./about')} style={{ cursor: 'pointer' }}>About</a></li>
+              <li><a onClick={() => navigate('./about')} style={{ cursor: 'pointer' }}>About US</a></li>
               <li><a onClick={() => navigate('./signUp')} style={{ cursor: 'pointer' }}>Sign Up</a></li>
             </ul>
           </div>
