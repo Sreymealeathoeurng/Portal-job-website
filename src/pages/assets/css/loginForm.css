@@ -1,0 +1,80 @@
+
+
+/* Main Section */
+.RegisterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  top: 19pc;
+  font-family: "Arima", sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.form-container {
+  width: 100%;
+  max-width: 700px;
+  height: 60pc;
+  padding: 35px;
+  background: white;
+  border-radius: 8px;
+  font-size : 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  text-align: start;
+  font-size: larger;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color:rgb(203, 115, 26);
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.login-link-container {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: #101216;
+  font-size: 1.2em;
+}
+
+
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}

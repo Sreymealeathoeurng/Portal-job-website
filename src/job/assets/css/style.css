@@ -1,0 +1,133 @@
+.categories {
+    width: 100%;
+    height: 500vh; /* Changed to vh for proper viewport height */
+    position: relative;
+    top: 150px;
+}
+
+.job-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%; /* Adjusted width for better responsiveness */
+    margin: 0 auto;
+}
+
+.category-item {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Increased padding for better spacing */
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px; /* Increased margin for better spacing */
+    border: 1px solid rgb(138, 138, 248);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    font-family: "Arima", sans-serif;
+}
+
+.category-item h3, .category-item a {
+    color: hsl(240, 64.50%, 43.10%);
+    text-decoration: underline;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon img {
+    width: 150px;
+    height: 90px;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .job-categories {
+        width: 100%;
+    }
+
+    .category-item {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .icon img {
+        width: 80px;
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 18px; 
+    }.job-categories {
+        width: 100%;
+    }
+
+    .category-item {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .icon img {
+        width: 80px;
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .category-item {
+        width: 180px; /* Smaller width for smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-categories {
+        width: 100%;
+    }
+
+    .category-item {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .icon img {
+        width: 80px;
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .category-item {
+        width: 90%; /* Full width for mobile devices */
+    }
+
+    .icon img {
+        width: 60px;
+        height: 40px;
+    }
+
+    h3 {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+}

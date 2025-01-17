@@ -1,0 +1,152 @@
+:root {
+    --white: white;
+    --blue: rgb(86, 86, 160);
+    --gray: rgb(117, 114, 114);
+    --blueviolet: rgb(110, 46, 170);
+}
+
+.display-anount-job {
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+    height: 120vh;
+    background-color: rgb(136, 122, 122);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    position: relative;
+    top: 100px; 
+}
+
+.big-block {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.block1 {
+    width: 15%;
+    background-color: var(--white);
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.block2 {
+    width: 75%; /* Adjusted for a balanced layout */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.block1 .title {
+    font-size: 18px; /* Title font size */
+    color: var(--blue); /* Title color */
+    margin-bottom: 15px; /* Space below title */
+    font-weight: bold;
+}
+
+.block1 input {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(86, 86, 160);
+}
+
+.block1 label {
+    display: flex; /* Flex for alignment */
+    align-items: center; /* Center align checkbox and text */
+    margin: 8px 0; 
+    position: relative;
+    top: 27px;
+    left:30px;
+    font-size: 16px; /* Adjust font size */
+    color: rgb(86, 86, 160);
+}
+
+.Job {
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgb(240, 240, 249);
+    margin-bottom: 15px;
+    padding: 20px; /* Reduced padding for a tighter look */
+    display: flex;
+    align-item: start;
+    flex-direction: row; /* Stack elements vertically */
+}
+.text{
+    width: 70%;
+}
+.text span{
+    text-align: start;
+    margin:2px;
+    color:rgb(110, 46, 170);
+    font-style: none;
+    display: flex;
+    align-item: start;
+    flex-direction: row;
+
+}
+
+.text h2 {
+    color: var(--blue);
+   text-align: start;
+
+}
+
+.btn-container {
+    height: 80%;
+    padding: 40px;
+    position: relative;
+    left: 100px;
+    /* Space above buttons */
+}
+
+.btn-container button {
+    background-color: #026BB4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.3s;
+    height: 30px;
+    margin-top: 30px;
+
+
+}
+
+.btn-container button:hover {
+    background-color: rgb(35, 36, 38);
+}
+
+.footer-at-searchBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+.footer-at-searchBar p {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(239, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    text-decoration: none;
+    color: rgb(95, 27, 27);
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.footer-at-searchBar p:hover {
+    background-color: rgb(95, 27, 27);
+}

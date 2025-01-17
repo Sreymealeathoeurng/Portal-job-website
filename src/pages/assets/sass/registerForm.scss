@@ -1,0 +1,133 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arima', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #0b1b54;
+}
+
+/* Header and Logo */
+.header-container {
+    width: 100%;
+    background-color: #0b1b54;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.logo-container img {
+    max-width: 200px;
+}
+
+.menu-container {
+    position: absolute;
+    right: 60px;
+}
+
+.menu-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+h2{
+    text-align: center;
+    font-size: x-large;
+}
+.menu-container ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;  
+}
+
+.menu-container ul li a:hover {
+    color: #96daf0;
+}
+
+/* Main Section */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    height: 95vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 60px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 30px;
+    
+}
+.form-container label{
+    font-size: x-large;
+    font-weight: 500;
+    margin: 10px;
+}
+p{
+    color: black;
+    font-size: larger;
+}
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: orange;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Footer Section */
+.footer-container {
+    background: #0b1b54;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.useful-links-container ul li a {
+    color: white;
+    font-size: 18px;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+.useful-links-container ul li a:hover {
+    color: #96daf0;
+}

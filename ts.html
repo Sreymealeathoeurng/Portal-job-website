@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Job Listings</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(117, 114, 114);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(117, 114, 114);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: start;
+    color: #333;
+}
+.Position{
+    color: rebeccapurple;
+    font-size: xx-large;
+
+}
+ 
+
+
+.Categories {
+    margin-top: 20px;
+}
+
+.category-item {
+    border: 0.5px solid black;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    background-color: white;
+}
+
+
+.job-detail {
+    display: flex;
+    align-items: center;
+   
+}
+
+.company-logo {
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    margin-right: 20px; /* Space between logo and job info */
+    overflow: hidden; /* Ensures any overflow is hidden */
+    border-radius: 50%; /* Makes the logo circular */
+    border: 1px solid #ccc; /* Light border for the logo */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    background-color: #f0f0f0
+    
+}
+
+.company-logo img {
+    width: 100%; /* Scale image to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensure the image is circular */
+}
+
+.company-Info {
+    flex-grow: 1;
+}
+.company-Info a{
+    color: rgb(59, 59, 59);
+    font-size: 30px;
+}
+
+.Position {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.Position:hover {
+    text-decoration: underline;
+}
+
+.date, .location, .type, .experience, .salary {
+    display: block;
+    color: #555;
+    margin-top: 5px;
+    font-size:larger;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Accounting</h1>
+        <main class="Categories" id="Categories">
+            <div class="category-item">
+                <div class="job-detail">
+                    <div class="company-logo">
+                        <img src="/src/pages/assets/img/acto.jpg" alt="">
+                    </div>
+                    <div class="company-Info">
+                        <a href="#" class="Position">Accounting Supervisor</a>
+                        <span class="date">04 Dec, 2024</span>
+                        <span class="location">Tuk Ta Phnom Penh</span>
+                        <span class="type">Full time</span>
+                        <span class="experience">2+ experience</span>
+                        <p class="salary">$700</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other job listings -->
+            <div class="category-item">
+                <div class="job-detail">
+                    <div class="company-logo">
+                        <img src="" alt="">
+                    </div>
+                    <div class="company-Info">
+                        <a href="#" class="Position">Accounting Manager</a>
+                        <span class="date">04 Dec, 2024</span>
+                        <span class="location">Tuk Ta Phnom Penh</span>
+                        <span class="type">Full time</span>
+                        <span class="experience">2+ experience</span>
+                        <p class="salary">$1000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more jobs similarly -->
+        </main>
+    </div>
+</body>
+</html>

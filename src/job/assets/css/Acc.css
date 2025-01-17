@@ -1,0 +1,202 @@
+:root {
+    --white: white;
+    --light-gray: #f8f9fa;
+    --gray: rgb(117, 114, 114);
+    --blue: #007bff;
+    --dark-blue: #0056b3;
+    --gold: #FFB700;
+}
+
+.accounting-main {
+    padding: 20px;
+}
+
+.job-title {
+    font-size: 50px;  /* Increased size */
+    color: rgb(102, 98, 98);
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", serif;
+    text-align: start;
+
+}
+
+.scrollable-container {
+    height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.jobCategories {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.job-item {
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+   height: 80%;
+}
+
+.job-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.job-details {
+    font-family: "Nunito Sans", serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.company-logo {
+    width: 300px; 
+    height: 300px;
+    margin-right: 20px;
+}
+
+.company-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.job-info p {
+    text-align: start;
+}
+
+.job-info {
+    flex-grow: 1;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 32px; 
+}
+
+.job-info .job-position,
+.job-info2 h4 {
+    color: #007bff;
+    font-family: "Arima", sans-serif;
+    font-size: 32px; 
+}
+
+.job-salary span,
+.job-info2 p ul {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 32px;  /* Increased size */
+    color: #6c757d;
+    font-family: "Arima", sans-serif;
+}
+
+.job-meta {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-family: "Nunito Sans", serif;
+    font-size: 30px;  /* Increased size */
+    color: #6c757d;
+}
+
+.job-salary {
+    font-family: "Nunito Sans", serif;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -10px;
+    font-size: 24px;  /* Increased size */
+}
+
+.job-info2 {
+    font-size: 24px;  /* Increased size */
+    color: #333;
+    margin-top: -50px;
+    height: auto;
+    font-family: "Nunito Sans", serif;
+}
+
+#apply {
+    width: 120px;
+    height: 40px;
+    background-color: var(--gold);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 143pc;
+    top: -20px;
+    transition: background-color 0.3s;
+}
+
+#apply:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-container {
+    width: 21%;
+    display: flex;
+    align-items: start; /* Corrected from align-item */
+    margin-top: 20px;
+    justify-content: space-evenly; 
+}
+
+.contact-card {
+    background-color: #b2e0f8; /* Light blue background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the box */
+    font-size: 20px; /* Increased size */
+    color: black; /* Text color */
+    margin-right: 20px; /* Space between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: fit-content; /* Adjust width to content */
+    align-items: start; /* Corrected from align-item */
+}
+
+.contact-card a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+}
+
+@media (max-width: 768px) {
+    .accounting-main {
+        padding: 10px;
+    }
+
+    .job-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-logo {
+        width: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .job-title {
+        font-size: 48px;  /* Increased size */
+    }
+
+    .job-info .job-position {
+        font-size: 28px;  /* Increased size */
+    }
+}

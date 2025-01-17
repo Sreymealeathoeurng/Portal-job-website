@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "123-456-7890",
+      "email": "john.doe@example.com",
+      "password": "$2b$10$VhK7Qjby9jG0qY3K9qKZ7eG4H1dP8g0gA4P2D4Z6q/8dGZVqU7J6m"
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "phoneNumber": "987-654-3210",
+      "email": "jane.smith@example.com",
+      "password": "$2b$10$8gL4vD2k3Qh1zK9B0kQz4OZeG1p8P4c5Y0uY8g9G4H3G6ZVqU7J6m"
+    },
+    {
+      "id": "3",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "phoneNumber": "555-123-4567",
+      "email": "alice.johnson@example.com",
+      "password": "$2b$10$0Fj5GgV5b8H1p3k6L8j6XOeG4H1dP8g0gA4P2D4Z6q/8dGZVqU7J6m"
+    },
+    {
+      "id": "c86b",
+      "firstName": "thoeurng",
+      "lastName": "sreymealea",
+      "phoneNumber": "0979330935",
+      "password": "mealea123"
+    }
+  ]
+}

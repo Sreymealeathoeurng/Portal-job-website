@@ -1,0 +1,790 @@
+{
+  "Joblisting": [
+    {
+      "category": "Accounting",
+      "job": [
+        {
+          "id": "1",
+          "title": "Accounting Supervisor",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "2 years",
+          "salary": "$700",
+          "role": "Manage accounting operations and ensure compliance with financial regulations.",
+          "responsibilities": [
+            "Oversee daily accounting activities and ensure accuracy in financial reporting.",
+            "Prepare monthly financial statements and reports for management.",
+            "Coordinate with external auditors during audits.",
+            "Manage accounts payable and receivable processes.",
+            "Develop and implement accounting policies and procedures."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Accounting or Finance.",
+            "2+ years of experience in accounting roles.",
+            "Strong knowledge of accounting principles and regulations.",
+            "Proficiency in accounting software (e.g., QuickBooks, SAP).",
+            "Excellent analytical and organizational skills."
+          ],
+          "offer": [
+            "Competitive salary and benefits package.",
+            "Opportunities for career advancement.",
+            "Supportive and dynamic work environment."
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Accounting Businessman",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "salary": "$1000",
+          "Experience": "",
+          "role": "Lead financial strategy and business planning for the organization.",
+          "responsibilities": [
+            "Develop financial strategies to support business goals.",
+            "Analyze financial performance and report on variances.",
+            "Manage budgeting and forecasting processes.",
+            "Collaborate with other departments to drive financial performance."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Business Administration or Finance.",
+            "5+ years of experience in financial management.",
+            "Strong leadership and communication skills.",
+            "Proficiency in financial modeling and analysis."
+          ],
+          "offer": [
+            "Attractive salary with performance bonuses.",
+            "Flexible working hours.",
+            "Professional development opportunities."
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Tax Accounting Officer",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$600",
+          "role": "Manage tax compliance and planning for the company.",
+          "responsibilities": [
+            "Prepare and file tax returns in compliance with local regulations.",
+            "Conduct tax research and analysis.",
+            "Assist in audits related to taxation.",
+            "Provide guidance on tax-related matters to management."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Accounting or Taxation.",
+            "2+ years of experience in tax accounting.",
+            "Strong understanding of tax laws and regulations.",
+            "Detail-oriented with strong analytical skills."
+          ],
+          "offer": [
+            "Competitive compensation package.",
+            "Work-life balance and flexible hours.",
+            "Continuous training and development."
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Development",
+      "job": [
+        {
+          "id": "4",
+          "title": "System Development Supervisor",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$700",
+          "role": "Lead system development projects and ensure timely delivery.",
+          "responsibilities": [
+            "Supervise development team and project deliverables.",
+            "Collaborate with stakeholders to define technical requirements.",
+            "Ensure adherence to best practices in software development.",
+            "Monitor project progress and report on status."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Computer Science or related field.",
+            "3+ years of experience in software development.",
+            "Strong knowledge of programming languages (e.g., Java, C#).",
+            "Excellent problem-solving and leadership skills."
+          ],
+          "offer": [
+            "Competitive salary and performance bonuses.",
+            "Health insurance and retirement plans.",
+            "Opportunities for professional growth."
+          ]
+        },
+        {
+          "id": "5",
+          "title": "Software Developer",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$1000",
+          "role": "Develop and maintain software applications to meet user needs.",
+          "responsibilities": [
+            "Write clean, scalable code using programming languages.",
+            "Conduct software testing and debugging.",
+            "Participate in code reviews and provide feedback.",
+            "Collaborate with cross-functional teams to define and design new features."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Computer Science or related field.",
+            "2+ years of software development experience.",
+            "Proficiency in software development tools and methodologies.",
+            "Strong analytical and debugging skills."
+          ],
+          "offer": [
+            "Attractive salary with comprehensive benefits.",
+            "Flexible working environment.",
+            "Training and development programs."
+          ]
+        },
+        {
+          "id": "6",
+          "title": "Assistant Software Developer",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$600",
+          "role": "Assist in software development tasks and projects.",
+          "responsibilities": [
+            "Support the development team in coding and testing.",
+            "Help troubleshoot software issues and bugs.",
+            "Document software processes and updates.",
+            "Participate in team meetings and contribute ideas."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Computer Science or related field.",
+            "Experience with programming languages is a plus.",
+            "Strong willingness to learn and adapt.",
+            "Good communication skills and teamwork."
+          ],
+          "offer": [
+            "Competitive salary.",
+            "Mentorship and training opportunities.",
+            "Dynamic work environment."
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Graphics",
+      "job": [
+        {
+          "id": "7",
+          "title": "Senior Designer",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$700",
+          "role": "Create and oversee design projects for various media.",
+          "responsibilities": [
+            "Develop creative concepts and designs.",
+            "Lead design projects from conception to execution.",
+            "Collaborate with clients and stakeholders.",
+            "Ensure designs align with brand guidelines."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Graphic Design or related field.",
+            "3+ years of design experience.",
+            "Strong portfolio showcasing design work.",
+            "Proficiency in design software."
+          ],
+          "offer": [
+            "Competitive salary and benefits.",
+            "Creative work environment.",
+            "Opportunities for skill development."
+          ]
+        },
+        {
+          "id": "8",
+          "title": "Web Designer",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$1000",
+          "role": "Design and maintain websites for various clients.",
+          "responsibilities": [
+            "Create visually appealing and user-friendly websites.",
+            "Collaborate with developers to implement designs.",
+            "Conduct website testing and optimization.",
+            "Stay updated on web design trends."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Web Design or related field.",
+            "2+ years of experience in web design.",
+            "Proficiency in HTML, CSS, and JavaScript.",
+            "Strong portfolio of web design projects."
+          ],
+          "offer": [
+            "Attractive salary.",
+            "Flexible working hours.",
+            "Opportunities for professional growth."
+          ]
+        },
+        {
+          "id": "9",
+          "title": "Graphic Designer",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$400",
+          "role": "Create graphics for marketing and branding purposes.",
+          "responsibilities": [
+            "Design visual content for various platforms.",
+            "Collaborate with marketing teams on campaigns.",
+            "Manage multiple design projects simultaneously.",
+            "Stay current with design trends."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Graphic Design or similar.",
+            "1-2 years of experience in graphic design.",
+            "Proficiency in Adobe Creative Suite.",
+            "Good communication and teamwork skills."
+          ],
+          "offer": [
+            "Competitive salary.",
+            "Collaborative work environment.",
+            "Opportunities for creativity and innovation."
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Management",
+      "job": [
+        {
+          "id": "10",
+          "title": "Bar Manager",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$700",
+          "role": "Oversee bar operations and manage staff.",
+          "responsibilities": [
+            "Manage daily operations of the bar.",
+            "Ensure excellent customer service.",
+            "Train and supervise staff.",
+            "Develop and implement bar menus."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Hospitality or related field.",
+            "3+ years of experience in bar management.",
+            "Strong leadership and communication skills.",
+            "Knowledge of beverage trends and regulations."
+          ],
+          "offer": [
+            "Competitive salary with tips.",
+            "Flexible schedule.",
+            "Opportunity for career advancement."
+          ]
+        },
+        {
+          "id": "11",
+          "title": "General Manager",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$1000",
+          "role": "Lead overall operations and strategy for the organization.",
+          "responsibilities": [
+            "Develop and implement business strategies.",
+            "Manage budgets and financial reports.",
+            "Oversee staff recruitment and training.",
+            "Ensure compliance with regulations."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Business Administration.",
+            "5+ years of experience in management roles.",
+            "Strong leadership and strategic planning skills.",
+            "Excellent communication and interpersonal skills."
+          ],
+          "offer": [
+            "Attractive salary and bonuses.",
+            "Comprehensive benefits package.",
+            "Opportunities for professional growth."
+          ]
+        },
+        {
+          "id": "12",
+          "title": "Assistant Manager",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$600",
+          "role": "Assist in managing daily operations and staff.",
+          "responsibilities": [
+            "Support the manager in daily operations.",
+            "Assist in staff training and supervision.",
+            "Ensure excellent customer service.",
+            "Help manage budgets and financial reports."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Hospitality or Management.",
+            "2+ years of experience in management roles.",
+            "Strong organizational and leadership skills.",
+            "Good communication skills."
+          ],
+          "offer": [
+            "Competitive salary.",
+            "Opportunities for training and development.",
+            "Supportive team environment."
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Finance",
+      "job": [
+        {
+          "title": "Finance Supervisor",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$700",
+          "role": "Supervise financial operations and ensure compliance.",
+          "qualifications": [
+            "Bachelor's degree in Finance or related field.",
+            "2+ years of experience in finance roles.",
+            "Strong analytical and problem-solving skills.",
+            "Proficiency in financial software."
+          ],
+          "responsibilities": [
+            "Oversee daily financial operations.",
+            "Ensure compliance with financial regulations.",
+            "Prepare financial reports and forecasts."
+          ],
+          "offer": [
+            "Health insurance",
+            "Annual bonus based on performance",
+            "Training and development opportunities"
+          ]
+        },
+        {
+          "title": "Finance Manager",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$1000",
+          "role": "Manage financial operations and strategy.",
+          "qualifications": [
+            "Bachelor's degree in Finance or Accounting.",
+            "5+ years of experience in financial management.",
+            "Excellent leadership and communication skills.",
+            "Knowledge of financial regulations and compliance."
+          ],
+          "responsibilities": [
+            "Develop financial strategies.",
+            "Manage budgeting and forecasting.",
+            "Lead financial audits and reporting."
+          ],
+          "offer": [
+            "Company car",
+            "Flexible working hours",
+            "Professional development courses"
+          ]
+        },
+        {
+          "title": "Finance Officer",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$600",
+          "role": "Assist in financial reporting and compliance.",
+          "qualifications": [
+            "Bachelor's degree in Finance or related field.",
+            "1-2 years of experience in finance.",
+            "Strong attention to detail.",
+            "Ability to work independently and in a team."
+          ],
+          "responsibilities": [
+            "Prepare financial statements.",
+            "Assist in budget preparation.",
+            "Ensure compliance with tax regulations."
+          ],
+          "offer": [
+            "Paid vacation days",
+            "Retirement plan",
+            "Team-building events"
+          ]
+        },
+        {
+          "title": "Finance Senior",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$400",
+          "role": "Analyze financial data and reports.",
+          "qualifications": [
+            "Bachelor's degree in Finance or Accounting.",
+            "3+ years of experience in financial analysis.",
+            "Proficient in Excel and financial modeling.",
+            "Strong analytical skills."
+          ],
+          "responsibilities": [
+            "Conduct financial analysis and modeling.",
+            "Interpret financial data for management.",
+            "Provide recommendations based on analysis."
+          ],
+          "offer": [
+            "Performance bonuses",
+            "Health and wellness programs",
+            "Work-from-home options"
+          ]
+        },
+        {
+          "title": "Finance Assistant",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$250",
+          "role": "Support financial operations and reporting.",
+          "qualifications": [
+            "Associate's degree in Finance or Accounting.",
+            "1+ years of experience in administrative roles.",
+            "Strong organizational skills.",
+            "Proficiency in Microsoft Office."
+          ],
+          "responsibilities": [
+            "Assist with invoice processing.",
+            "Maintain financial records.",
+            "Provide administrative support to the finance team."
+          ],
+          "offer": [
+            "Mentorship opportunities",
+            "Company-sponsored events",
+            "Flexible working environment"
+          ]
+        },
+        {
+          "title": "Finance Intern",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$150",
+          "role": "Assist in financial reporting and analysis.",
+          "qualifications": [
+            "Currently pursuing a degree in Finance or related field.",
+            "Strong willingness to learn.",
+            "Basic knowledge of financial principles.",
+            "Good communication skills."
+          ],
+          "responsibilities": [
+            "Support the finance team with daily tasks.",
+            "Assist in preparing reports.",
+            "Learn about financial regulations and compliance."
+          ],
+          "offer": [
+            "Hands-on experience",
+            "Networking opportunities",
+            "Potential for full-time employment"
+          ]
+        },
+        {
+          "title": "Finance Executive",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$500",
+          "role": "Manage client relationships and financial operations.",
+          "qualifications": [
+            "Bachelor's degree in Finance or Accounting.",
+            "3+ years of experience in finance roles.",
+            "Excellent analytical skills.",
+            "Strong interpersonal skills."
+          ],
+          "responsibilities": [
+            "Develop and maintain client relationships.",
+            "Manage financial accounts and transactions.",
+            "Ensure timely reporting and compliance."
+          ],
+          "offer": [
+            "Competitive salary",
+            "Health benefits",
+            "Career advancement opportunities"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Marketing",
+      "job": [
+        {
+          "id": "13",
+          "title": "Marketing Supervisor",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$700",
+          "role": "Oversee marketing strategies and campaigns.",
+          "responsibilities": [
+            "Develop and implement marketing plans.",
+            "Analyze market trends and adjust strategies.",
+            "Collaborate with sales teams to optimize marketing efforts.",
+            "Manage social media and online presence."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Marketing or related field.",
+            "3+ years of experience in marketing roles.",
+            "Strong analytical and project management skills.",
+            "Proficiency in digital marketing tools."
+          ],
+          "offer": [
+            "Competitive salary and benefits.",
+            "Creative and dynamic work environment.",
+            "Opportunities for professional development."
+          ]
+        },
+        {
+          "id": "14",
+          "title": "Digital Marketing Manager",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$1000",
+          "role": "Lead digital marketing strategy and campaigns.",
+          "responsibilities": [
+            "Develop and execute digital marketing strategies.",
+            "Manage online advertising and SEO efforts.",
+            "Analyze digital marketing metrics and report results.",
+            "Collaborate with cross-functional teams."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Marketing or related field.",
+            "5+ years of experience in digital marketing.",
+            "Strong knowledge of SEO, PPC, and analytics.",
+            "Excellent communication skills."
+          ],
+          "offer": [
+            "Attractive salary with performance bonuses.",
+            "Flexible work schedule.",
+            "Professional growth opportunities."
+          ]
+        },
+        {
+          "id": "15",
+          "title": "Assistant Digital Marketing",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla Phnom Penh",
+          "type": "Full-time",
+          "Experience": "",
+          "salary": "$600",
+          "role": "Assist in executing digital marketing campaigns.",
+          "responsibilities": [
+            "Support the digital marketing team in campaign execution.",
+            "Manage social media accounts and content.",
+            "Conduct market research and analysis.",
+            "Assist in reporting and analytics."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Marketing or related field.",
+            "1-2 years of experience in digital marketing.",
+            "Strong communication and organizational skills.",
+            "Proficiency in social media platforms."
+          ],
+          "offer": [
+            "Competitive salary.",
+            "Mentorship and training opportunities.",
+            "Dynamic work environment."
+          ]
+        }
+      ]
+    },
+   {
+      "category": "Animation",
+      "job": [
+        {
+          "id": "17",
+          "title": "Video Editor",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla, Phnom Penh",
+          "type": "Full-time",
+          "salary": "$700",
+          "role": "Edit and produce video content.",
+          "responsibilities": [
+            "Collaborate with the creative team to create video content.",
+            "Edit video footage and add effects.",
+            "Ensure timely delivery of video projects.",
+            "Manage video archives and assets."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Film, Media, or related field.",
+            "2+ years of experience in video editing.",
+            "Proficiency in video editing software.",
+            "Strong storytelling and creative skills."
+          ],
+          "offer": [
+            "Competitive salary.",
+            "Creative and collaborative work environment.",
+            "Opportunities for professional growth."
+          ]
+        },
+        {
+          "id": "18",
+          "title": "Interior Designer",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla, Phnom Penh",
+          "type": "Full-time",
+          "salary": "$700",
+          "role": "Design and plan interior spaces.",
+          "responsibilities": [
+            "Develop design concepts and presentations.",
+            "Select colors, materials, and furnishings.",
+            "Collaborate with clients and contractors.",
+            "Ensure design projects are completed on time."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Interior Design or related field.",
+            "2+ years of experience in interior design.",
+            "Strong visual and spatial awareness.",
+            "Proficiency in design software."
+          ],
+          "offer": [
+            "Attractive salary and benefits.",
+            "Creative and dynamic work environment.",
+            "Professional development opportunities."
+          ]
+        },
+        {
+          "id": "19",
+          "title": "Game Designer",
+          "date": "04 Dec, 2024",
+          "location": "Terk Tla, Phnom Penh",
+          "type": "Full-time",
+          "salary": "$600",
+          "role": "Design and develop engaging game experiences.",
+          "responsibilities": [
+            "Create game concepts and mechanics.",
+            "Collaborate with developers and artists.",
+            "Test and iterate on game designs.",
+            "Research industry trends and player preferences."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Game Design or related field.",
+            "2+ years of experience in game design.",
+            "Strong problem-solving and analytical skills.",
+            "Familiarity with game development software."
+          ],
+          "offer": [
+            "Competitive salary.",
+            "Innovative and collaborative work environment.",
+            "Opportunities for career advancement."
+          ]
+        }
+      ]
+    }
+    ,{
+      "category": "HRM",
+      "job": [
+        {
+          "id": "1",
+          "title": "HR Manager",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "5 years",
+          "salary": "$800",
+          "role": "Oversee HR operations and ensure compliance with labor regulations.",
+          "responsibilities": [
+            "Develop and implement HR strategies aligned with business goals.",
+            "Manage recruitment and selection processes.",
+            "Oversee employee onboarding and training programs.",
+            "Ensure compliance with labor laws and regulations.",
+            "Handle employee relations and performance management."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Human Resource Management or related field.",
+            "5+ years of experience in HR roles.",
+            "Strong knowledge of labor laws and regulations.",
+            "Excellent communication and interpersonal skills.",
+            "Proficient in HR software and systems."
+          ],
+          "offer": [
+            "Competitive salary and comprehensive benefits package.",
+            "Opportunities for professional growth and development.",
+            "Supportive and collaborative work environment."
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Talent Acquisition Specialist",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "salary": "$700",
+          "Experience": "3 years",
+          "role": "Manage the recruitment process and talent acquisition strategies.",
+          "responsibilities": [
+            "Develop and implement recruitment plans.",
+            "Source candidates through various channels.",
+            "Conduct interviews and assess candidates.",
+            "Collaborate with hiring managers to understand staffing needs.",
+            "Maintain candidate databases and records."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Human Resources, Business Administration, or related field.",
+            "3+ years of experience in recruitment.",
+            "Strong interviewing and assessment skills.",
+            "Excellent networking and relationship-building abilities."
+          ],
+          "offer": [
+            "Attractive salary with performance incentives.",
+            "Flexible working hours.",
+            "Professional development opportunities."
+          ]
+        },
+        {
+          "id": "3",
+          "title": "HR Coordinator",
+          "date": "04 Dec, 2024",
+          "location": "Tuk Ta Phnom Penh",
+          "type": "Full-time",
+          "Experience": "1 year",
+          "salary": "$500",
+          "role": "Support HR functions and assist with day-to-day operations.",
+          "responsibilities": [
+            "Assist with recruitment and onboarding processes.",
+            "Maintain employee records and HR databases.",
+            "Coordinate training and development programs.",
+            "Help with employee engagement initiatives.",
+            "Support HR policies and procedures."
+          ],
+          "qualifications": [
+            "Bachelor's degree in Human Resource Management or related field.",
+            "1+ year of experience in HR or administrative roles.",
+            "Strong organizational and multitasking skills.",
+            "Excellent communication skills."
+          ],
+          "offer": [
+            "Competitive compensation package.",
+            "Work-life balance and flexible hours.",
+            "Continuous training and career development."
+          ]
+        }
+      ]
+    }
+
+  ]
+}

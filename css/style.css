@@ -1,0 +1,623 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Arima", sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #333;
+  width: 100%;
+}
+
+/* Menu styles */
+.menu {
+  position: fixed;
+  top: 10px;
+  right: 70px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1000;
+}
+
+/* Logo styles */
+.logo img {
+  max-width: 200px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+/* Menu container styles */
+.menu-contain {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  width: 45%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1000;
+}
+
+/* Menu list styles */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Menu list items styles */
+.menu ul li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+/* Hide the dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2000;
+  text-align: start;
+}
+
+.dropdown-menu li a {
+  display: none;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu li a {
+  display: block;
+}
+
+.dropdown:hover button {
+  display: block;
+}
+
+/* Menu link styles */
+.dropdown button,
+.menu ul li a {
+  color: #fff;
+  font-size: 25px;
+  margin: 5px;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 10px 15px;
+}
+
+/* Button styles */
+.menu-contain ul li button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Arima", sans-serif;
+}
+
+.menu ul li a:hover {
+  color: #96daf0;
+}
+
+/* Dropdown item hover effect */
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Text content styles */
+.text-content {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding-left: 20px;
+}
+
+/* Welcome text styles */
+.welcometxt {
+  width: 50%;
+  margin-top: 20%;
+  padding-left: 5%;
+}
+
+/* Heading in welcome text */
+.welcometxt h2 {
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
+.welcometxt p {
+  font-size: 20px;
+  margin-bottom: 50%;
+}
+
+/* Search bar styles at the top*/
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 78%;
+  height: 7%;
+  font-family: "Arima", sans-serif;
+  position: relative;
+  left: 100px;
+}
+
+.search-field {
+  width: 24.9%;
+  height: 100%;
+  background-color: #003F6B;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: #fff;
+}
+
+.search-field a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-field i {
+  margin-right: 30px;
+  font-size: 40px;
+}
+
+.search-field select,
+.search-field input {
+  border: none;
+  color: #fff;
+  font-size: 23px;
+  width: 60%;
+  height: 70%;
+  outline: none;
+  background-color: #003F6B;
+  text-align: center;
+  font-family: "Arima", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.search-field select {
+  border: none;
+  color: #fff;
+  font-size: 23px;
+  width: 60%;
+  height: 70%;
+  background-color: #003F6B;
+}
+
+.search-field select option {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+}
+
+#search {
+  font-size: 22px;
+  background-color: whitesmoke;
+}
+
+#search a {
+  color: black;
+}
+
+/*How it work and footer container*/
+.How_it_work {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(24, 22, 22);
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 25px;
+  text-align: start;
+  color: #0072C6;
+}
+
+.section p {
+  font-size: 25px;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.detail {
+  width: 98%;
+  height: 800px;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  margin: 98px;
+}
+
+.create_acc {
+  width: 450px;
+  height: 500px;
+  border-radius: 20px;
+  margin: 30px;
+  text-align: center;
+  background-color: #b3d0e5;
+}
+
+#icon {
+  border: 5px solid rgb(252, 253, 255);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  background-color: rgb(77, 177, 200);
+  position: relative;
+  bottom: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.create_acc p {
+  color: #003F6B;
+  font-size: 20px;
+}
+
+.create_acc span {
+  text-indent: 60px;
+  font-size: xx-large;
+}
+
+/*footer contact style*/
+footer {
+  background: linear-gradient(to right, #0f1012, #0b1b54);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contenttxt {
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  position: relative;
+  top: 100px;
+  right: 170px;
+}
+
+.footer-contain {
+  width: 80%;
+  height: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 20px;
+  justify-content: space-evenly;
+  margin-bottom: 255px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 100px;
+  position: relative;
+  right: 140px;
+}
+
+.footer-container h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.footer-container p,
+.footer-container li,
+.footer-container a {
+  font-size: 30px;
+  color: #ccc;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin-bottom: 5px;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+  color: #fff;
+}
+
+.contact-form {
+  width: 35%;
+  padding: 2px;
+  display: flex;
+  margin: 1pc 0pc 3pc 37pc;
+}
+
+.contact-form input {
+  width: 60%;
+  height: 65px;
+  align-items: start;
+  border: none;
+  margin: 1px;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form button {
+  width: 20%;
+  background-color: #7a410c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.connect-us {
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+.job-portal {
+  width: 500px;
+  height: 400px;
+}
+
+.useful-link {
+  width: 350px;
+  height: 200xpx;
+}
+
+.contact-form button:hover {
+  background-color: #a67327;
+}
+
+/*searching bar_cheata*/
+:root {
+  --white: white;
+  --blue:rgb(86, 86, 160);
+  --gray:rgb(117, 114, 114);
+  --blueviolet:rgb(110, 46, 170);
+}
+
+.fining-job-block {
+  width: 100%;
+  height: 25%;
+  background-color: rgb(136, 122, 122);
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.big-block {
+  width: 70%;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 3vw;
+  margin-bottom: 1%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.block1 > .title {
+  font-size: 28px;
+  color: var(--blueviolet);
+  margin-left: 30px;
+}
+
+.block1 {
+  width: 18%;
+  padding-left: 30px;
+  background-color: var(--white);
+  color: var(--blue);
+  margin: 10px;
+  float: left;
+}
+
+.block1 > label > input {
+  height: 20px;
+  width: 20px;
+}
+
+.block2 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.Job {
+  padding: 20px;
+  width: 90%;
+  height: 13%;
+  background-color: var(--white);
+  border: 1px solid #ccc;
+  box-shadow: 2px 3px 3px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  width: 80%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text > h2 {
+  height: 50px;
+  color: var(--blue);
+  font-size: 30px;
+}
+
+.text > .label {
+  width: 35%;
+  height: 30px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  width: 15%;
+  height: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.footer-at-searchBar {
+  width: 15%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-at-searchBar > p {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: whitesmoke;
+}
+
+.footer-at-searchBar > p:hover {
+  background-color: pink;
+}
+
+.footer-at-searchBar > p > a {
+  text-decoration: none;
+  color: rgb(95, 27, 27);
+  font-size: 26px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .category-item {
+    width: 10%;
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=style.css.map */5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-at-searchBar > p {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: whitesmoke;
+}
+
+.footer-at-searchBar > p:hover {
+  background-color: pink;
+}
+
+.footer-at-searchBar > p > a {
+  text-decoration: none;
+  color: rgb(95, 27, 27);
+  font-size: 26px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .category-item {
+    width: 10%;
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
