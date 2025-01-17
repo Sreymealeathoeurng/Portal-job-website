@@ -5,7 +5,10 @@ import './assets/sass/about.scss';
 import ruppImage from './assets/img/rupp.jpg'; 
 import fe from './assets/img/fe.png';
 import ite from './assets/img/ite.png';  
-
+import img1 from './assets/img/mealea.jpg'; // Ensure the image path is correct
+import img2 from './assets/img/chata.jpg'; // Ensure the image path is correct
+import img3 from './assets/img/lin.jpg'; // Ensure the image path is correct
+import img4 from './assets/img/hong.jpg'; // Ensure the image path is correct
 const About = () => {
     // Function to open the Royal University of Phnom Penh website
     const openRuppWebsite = () => {
@@ -24,24 +27,24 @@ const About = () => {
 
     const teamMembers = [
         {
-            name: 'Helena Farse',
-            experience: 'Professional guide | 5 years of experience',
-            imageUrl: 'path_to_image1', // Replace with actual image URL
+            name: 'Thoeurng sreymealea',
+            experience: 'Student of IT Engineering',
+            imageUrl: img1, // Use imported image
         },
         {
-            name: 'Dan Pitts',
-            experience: 'Professional guide | 5 years of experience',
-            imageUrl: 'path_to_image2', // Replace with actual image URL
+            name: 'CHUM SOCHEATA',
+            experience: 'Student of IT Engineering',
+            imageUrl: img2, // Replace with actual image URL
         },
         {
-            name: 'Tomas Willens',
-            experience: 'Photographed | 5 years of experience',
-            imageUrl: 'path_to_image3', // Replace with actual image URL
+            name: 'KOUN SOKHALIN',
+            experience: 'Student of IT Engineering',
+            imageUrl: img3, // Replace with actual image URL
         },
         {
-            name: 'Tomas Willens',
-            experience: 'Photographed | 5 years of experience',
-            imageUrl: 'path_to_image3', // Replace with actual image URL
+            name: 'Kim Ehong',
+            experience: 'Student of IT Engineering',
+            imageUrl: img4, // Replace with actual image URL
         },
     ];
 
@@ -89,8 +92,6 @@ const About = () => {
                                     onClick={openFeWebsite} 
                                     style={{ cursor: 'pointer' }} 
                                 />
-                            </div>
-                            <div className="img3">
                                 <img 
                                     src={ite} 
                                     alt="Institute of Technology" 
@@ -99,34 +100,27 @@ const About = () => {
                                 />
                             </div>
                         </div>
-
-                        <div className="text-container">
-                            <h2>OURS <span style={{color:'#bebebe'}}>Team</span></h2>
-                        </div>
                     </div>
                 </div>
                 
-                
             </div>
             <div className="teamSection">
-                        <h2>Meet Our Team</h2>
-                        <div className="teamMembers">
-                            {teamMembers.map((member, index) => (
-                                <div className="teamMember" key={index}>
-                                    <img src={member.imageUrl} alt={member.name} className="memberImage" />
-                                    <h3>{member.name}</h3>
-                                    <p>{member.experience}</p>
-                                    <div className="socialLinks">
-                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i className="fab fa-twitter"></i></a>
-                                        <a href="#"><i className="fab fa-instagram"></i></a>
-                                        <a href="#"><i className="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            ))}
+                <h1 style={{position: 'relative',top: '20pc'}}>Meet Our Team</h1>
+                <div className="teamMembers">
+                    {teamMembers.map((member, index) => (
+                        <div className="teamMember" key={index}>
+                            <img src={member.imageUrl} alt={member.name} className="memberImage" />
+                            <h3>{member.name}</h3>
+                            <p>{member.experience}</p>
+                            <div className="socialLinks">
+                                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-instagram"></i></a>
+                            </div>
                         </div>
-                    </div>
-
+                    ))}
+                </div>
+            </div>
 
             <Footer />
         </>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import axios from 'axios';
-import './assets/css/home.css'; 
 
 const BackgroundImg = () => {
     return (
@@ -49,22 +48,22 @@ const MenuContainer = ({ navigate }) => {
                     </li>
                     <li className="dropdown">
                         <button className="dropdown-toggle" id="companiesDropdown" aria-expanded="false">
-                            <Link to="finding-job-block" spy={true} smooth={true} offset={50} duration={500}>Companies</Link>
+                            Companies
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="companiesDropdown">
                             {["ChipMong 271", "Aeon Mall Sen Sok", "Aeon Mall 2", "Makro", "Amazon Cafe", "Others"].map(company => (
-                                <li key={company}><a href="#">{company}</a></li>
+                                <li key={company}>
+                                    <Link to="big-block" spy={true} smooth={true} offset={50} duration={500}>
+                                        {company}
+                                    </Link>
+                                </li>
                             ))}
                         </ul>
                     </li>
                     <li>
-                        <Link onClick={() => navigate('./about')}>About</Link> <span id="ic">⟶</span>
+                        <Link onClick={() => navigate('./about')}>About Us</Link> <span id="ic">⟶</span>
                     </li>
                     <li><Link onClick={() => navigate('./signUp')}>Sign In</Link></li>
-                    <li id="block">
-                        <a href="#">+</a>
-                        <a href="#">Post a Job</a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -120,7 +119,7 @@ const Header = ({ showBackgroundImg = true, showContent = true }) => {
             {showBackgroundImg && <BackgroundImg />}
 
             {showContent && (
-                <div className="text-content">
+                <div className="text-content" style={{ position: 'absolute', top: '20%' }}>
                     <div className="welcometxt">
                         <h2>Find Your <br /> Dream Job Here</h2>
                         <p>You have many options for finding a job—each potentially expanding <br /> the number and types of roles you discover. <br /> Let’s go over four main ways to find your next job.</p>
@@ -153,8 +152,8 @@ const Header = ({ showBackgroundImg = true, showContent = true }) => {
                                     <option value="">Location</option>
                                     <option value="phnom_penh">Phnom Penh</option>
                                     <option value="kompung_spue">Kompung Spue</option>
-                                    <option value="seim_reab">Seim Reab</option>
-                                    <option value="more">Other</option>
+                                    <option value="siem_reap">Siem Reap</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
 

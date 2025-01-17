@@ -2,11 +2,12 @@ import React from 'react';
 
 const HowItWorks = () => {
     return ( 
-        <div className="how-it-works-container">
-            <div className="section">
-                <h1>How It Works</h1>
-                <h2>Procedural Working</h2>
-                <p>
+        <div className="how-it-works-container" style={{display: 'flex',flexDirection: 'column',justifyContent:'center'}}>
+           
+            <div className="section"  style={{ textAlign: 'center',  width: '50%',alignItems: 'center',height:'30px',position:'relative',left:'25%'}} >
+            <h1 style={{fontSize:'70px'}}>How It Works ?</h1>
+                <p >Procedural Working</p>
+                <p >
                     This section explains how it functions and operates.
                     “Before I could properly assemble the model car,
                     I had to carefully study the instruction manual to figure out how it works.”
@@ -41,8 +42,15 @@ const HowItWorks = () => {
                         <section>
                             <span>Find a Job</span>
                             <p>
-                                What if the app accounts are created manually at the back end, without the user having to participate in the registration process, except for providing their information offline?
-                                Do these types of app accounts fall under the updated requirement?
+                            Need help writing a job
+                            description for a specific role?
+                            Use these job description
+                            examples to create your 
+                            next great job posting. 
+                            Or if you’re ready to hire, 
+                            post your job on
+                            Indeed.Search for Titles...
+
                             </p>
                         </section>
                     </div>
@@ -54,11 +62,16 @@ const HowItWorks = () => {
                             </svg>
                         </section>
                         <section>
-                            <span>Create an Account</span>
+                            <span>Build Effective Resume</span>
                             <p>
-                                According to the updated account deletion requirements, all apps that allow users to create an account must provide an in-app path to delete their accounts.
-                                What if the app accounts are created manually at the back end, without the user having to participate in the registration process, except for providing their information offline?
-                                Do these types of app accounts fall under the updated requirement?
+                            First things first, you need 
+                            to do some preparation. 
+                            Review the job posting and
+                            gather the essentials to 
+                            ensure that you create a
+                            stellar resume. This step 
+                            will make the rest of the 
+                            process much easier.
                             </p>
                         </section>
                     </div>
@@ -70,11 +83,18 @@ const HowItWorks = () => {
                             </svg>
                         </section>
                         <section>
-                            <span>Create an Account</span>
+                            <span>Apply for a Job</span>
                             <p>
-                                According to the updated account deletion requirements, all apps that allow users to create an account must provide an in-app path to delete their accounts.
-                                What if the app accounts are created manually at the back end, without the user having to participate in the registration process, except for providing their information offline?
-                                Do these types of app accounts fall under the updated requirement?
+                            Crafting a compelling job
+                            description is essential to 
+                            helping you attract the most 
+                            qualified candidates for your job. 
+                            With more than 25 million jobs
+                            listed on Indeed, a great job description
+                            can help your jobs stand out from the rest.
+                            Your job descriptions are where you
+                            start marketing your company and
+                            your job to your future hire.
                             </p>
                         </section>
                     </div>

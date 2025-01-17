@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './assets/css/Acc.css';
 import { useNavigate } from "react-router-dom";
 import potoImage from './assets/poto.png'; 
+import data from './data/db.json'; // Importing db.json
 
 const Development = () => {
     const [jobListings, setJobListings] = useState([]);
@@ -15,20 +16,14 @@ const Development = () => {
     };
 
     useEffect(() => {
-        const fetchJobListings = async () => {
+        const fetchJobListings = () => {
             setLoading(true);
             try {
-                const response = await fetch("localhost:5000/Joblisting");
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                
-                // Ensure correct structure when filtering for "Development"
-                const developmentJobs = data.find(category => category.category === "Development");
+                // Find the "Development" category from the imported data
+                const developmentJobs = data.Joblisting.find(category => category.category === "Development");
                 setJobListings(developmentJobs ? developmentJobs.job : []); // Set the filtered jobs
             } catch (error) {
-                setError(error.message);
+                setError('Failed to load job listings');
             } finally {
                 setLoading(false);
             }
@@ -72,7 +67,7 @@ const Development = () => {
                                         </p>
                                         <div className="job-meta">
                                             <span className="job-location">
-                                            Location: {job.location}
+                                                Location: {job.location}
                                             </span>
                                             <br/>
                                             <span className="job-type">
@@ -81,12 +76,12 @@ const Development = () => {
                                             <span>Experience: {job.experience}</span>
                                         </div>
                                         <div className="job-salary">
-                                               <span> {job.salary}</span>
+                                            <span>{job.salary}</span>
                                         </div>
                                         {visibleJobId === job.id && (
                                             <div className="job-info2">
-                                                <h4>ROle: </h4>
-                                                <ul> {job.role}</ul>
+                                                <h4>Role:</h4>
+                                                <ul>{job.role}</ul>
                                                 <h4>Responsibilities:</h4>
                                                 <ul>
                                                     {job.responsibilities.map((task, index) => (
@@ -99,7 +94,7 @@ const Development = () => {
                                                         <li key={index}>{qual}</li>
                                                     ))}
                                                 </ul>
-                                                <h4>Offer:</h4>
+                                                <h4>Offers:</h4>
                                                 <ul>
                                                     {job.offer.map((offerItem, index) => (
                                                         <li key={index}>{offerItem}</li>
@@ -107,16 +102,23 @@ const Development = () => {
                                                 </ul>
                                                 <div className="contact-container">
                                                     <div className="contact-card">
-                                                            Contact: 081 63 72 26
-                                                        </div>
-                                                        <div className="contact-card">
-                                                            <a href="http://www.portaljob.com" target="_blank" rel="noopener noreferrer">
-                                                                www.portaljob.com
-                                                            </a>
-                                                        </div>
+                                                        Contact: 081 63 72 26
+                                                    </div>
+                                                    <div className="contact-card">
+                                                        <a href="http://www.portaljob.com" target="_blank" rel="noopener noreferrer">
+                                                            www.portaljob.com
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <button id='apply' onClick={(e) => { e.stopPropagation(); navigate(`/apply/${job.id}`); }}>Apply</button> 
-                                             
+                                                <button 
+                                                    id='apply' 
+                                                    onClick={(e) => { 
+                                                        e.stopPropagation(); 
+                                                        navigate(`/apply/${job.id}`); 
+                                                    }}
+                                                >
+                                                    Apply
+                                                </button> 
                                             </div>
                                         )}
                                     </div>
@@ -130,6 +132,6 @@ const Development = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Development;

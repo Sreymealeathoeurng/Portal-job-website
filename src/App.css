@@ -72,10 +72,11 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0%;
   left: 0;
-  z-index: 2000;
+  z-index: 1000;
   text-align: start;
+
 }
 
 .dropdown-menu li a {
@@ -100,11 +101,11 @@ body {
 .dropdown button,
 .menu ul li a {
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   margin: 5px;
   text-decoration: none;
   transition: color 0.3s;
-  padding: 10px 15px;
+ 
 }
 
 /* Button styles */
@@ -116,7 +117,7 @@ body {
 }
 
 .menu ul li a:hover {
-  color: #96daf0;
+  color:rgb(22, 28, 29);
 }
 
 /* Dropdown item hover effect */
@@ -124,31 +125,21 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Text content styles */
-.text-content {
-  width: 70%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  margin-left: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  padding-left: 20px;
-}
 
 /* Welcome text styles */
 .welcometxt {
-  width: 50%;
+  width: 30%;
   margin-top: 20%;
   padding-left: 5%;
+
+  
 }
 
 /* Heading in welcome text */
 .welcometxt h2 {
   font-size: 50px;
   margin-bottom: 5%;
+  
 }
 
 .welcometxt p {
@@ -237,18 +228,7 @@ body {
 }
 
 
-/*How it work and footer container*/
-.How_it_work {
-  
-  width: 100%;
-  height: 50pc;
-  overflow: hidden;
-  background-color: whitesmoke;
-  text-align: center;
-  position: relative;
-  top: 100pc;
-  margin-top: 50pc;
-}
+
 
 .container {
   max-width: 800px;
@@ -323,13 +303,12 @@ h1 {
 /*footer contact style*/
 .footer-container-botton{
   background: linear-gradient(to right, #0f1012, #0b1b54);
-  height: 100vh;
+  height: 150vh;
   color: #fff;
   display: flex;
   justify-content: center;
   overflow: hidden;
-  position: relative;
-  top: 200px;
+  
 }
 
 .contenttxt{
@@ -410,7 +389,13 @@ h1 {
   width: 350px;
   height: 200xpx;
 }
-
+.contact-form{
+  width: 100%;
+ 
+  background-color:rgb(68, 213, 20);
+  align-items: start;
+ 
+}
 .contact-form button:hover {
   background-color: #a67327;
 }
@@ -621,8 +606,9 @@ button#search {
 }
 
 /* How it works and footer container */
+
 .how-it-works {
-  margin-top: 400px;
+  margin-top: 250px;
   width: 100%;
   align-items: center;
   overflow: hidden;
@@ -645,21 +631,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.section {
-  margin-bottom: 40px;
-}
-
-.section h2 {
-  font-size: 25px;
-  text-align: center;
-  color: #0072C6;
-}
-
-.section p {
-  font-size: 25px;
-  line-height: 1.6;
-  text-align: start;
-}
 
 #home {
   width: 100%;
@@ -670,8 +641,10 @@ h1 {
   align-items: center; /* Center vertically */
   text-align: center;
   position: relative;
-  top: 150pc;
+  top: 10px;
   font-family: 'Arima', sans-serif;
+
+
 
 
 }
@@ -681,19 +654,30 @@ h1 {
   background: linear-gradient(to right, #0f1012,  #0b1b54);
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
   padding: 60px;
-  position: relative;
   font-family: 'Arima', sans-serif;
-  position: relative;
-  bottom: -200vh;
   width: 100%;
+  height: 60vh;
 }
 
 .contenttxt {
+  width: 100%;
   display: flex;
   justify-content: start; 
+
+
+}
+.contenttxt1 {
+  width: 60%;
+  display: flex;
+  justify-content: start; 
+  align-items: center;
+
+
 
 }
 
@@ -733,34 +717,31 @@ h1 {
 
 /* Contact form styles */
 .contact-form {
-  width: 100%;
-  padding: 2px;
+  width: 50%;
+  height: 60px;
   display: flex;
-  background-color: #7a410c;
-  align-item: center;
-  margin: 1% 0 3% auto; /* Centered margin */
-  position: relative;
-  right: 200pc;
-  
+  justify-content: start;
+  align-items: start;
+  background-color: #7a410c;  
 }
 
 .contact-form input {
-  width: 60%;
-  height: 65px;
+  width: 70%;
+  height: 100%;
   border: none;
   margin: 1px;
-  
   text-align: center;
   font-size: x-large;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form button {
-  width: 20%;
+  width: 15%;
+  height: 90%;
   background-color: #7a410c;
   color: #fff;
   border: none;
-  padding: 10px;
+
   text-align: start;
   font-size: large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -831,7 +812,7 @@ h1 {
   }
 
   .how-it-works {
-    margin-top: 200px; /* Adjust margin for smaller screens */
+    margin-top: 20px; /* Adjust margin for smaller screens */
   }
 
   h1 {

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 import jobData from './data/db1.json';
-import'./assets/css/DisplayJob.css';
+import './assets/css/DisplayJob.css';
 
 export default function DisplayJob() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -25,21 +26,22 @@ export default function DisplayJob() {
       const jobSalary = typeof job.salary === 'string' ? parseInt(job.salary.replace('$', ''), 10) : 0; // Safety check
       return jobSalary >= min && jobSalary <= max;
     });
-  
+
     return matchesLocation && matchesCategory && matchesPrice;
   });
+
   const totalPages = Math.ceil(filteredJobs.length / itemsPerPage);
   const jobsToDisplay = filteredJobs.slice(currentIndex, currentIndex + itemsPerPage);
 
   const nextJob = () => {
     if (currentIndex + itemsPerPage < filteredJobs.length) {
-      setCurrentIndex((prevIndex) => prevIndex + itemsPerPage);
+      setCurrentIndex(prevIndex => prevIndex + itemsPerPage);
     }
   };
 
   const prevJob = () => {
     if (currentIndex > 0) {
-      setCurrentIndex((prevIndex) => prevIndex - itemsPerPage);
+      setCurrentIndex(prevIndex => prevIndex - itemsPerPage);
     }
   };
 
@@ -71,31 +73,36 @@ export default function DisplayJob() {
           <div className="sidebar-content">
             <label className="title">By Location</label><br />
             {["Ta Kmau", "Takeo", "Kom Pot", "KPC", "SR", "PP", "PVH", "Kep"].map(location => (
-              <><label key={location}>
-                {location}
-              </label><input
+              <div key={location}>
+                <label>{location}</label>
+                <input
                   type="checkbox"
                   checked={filters.locations.includes(location)}
-                  onChange={() => toggleFilter('locations', location)} /></>
+                  onChange={() => toggleFilter('locations', location)}
+                />
+              </div>
             ))}
             <label className="title">By Category</label><br />
             {["Accounting", "Finance", "Graphics", "Development", "Animation", "Management", "Marketing", "HRM"].map(category => (
-              <><label key={category}>
-                {category}
-              </label><input
+              <div key={category}>
+                <label>{category}</label>
+                <input
                   type="checkbox"
                   checked={filters.categories.includes(category)}
-                  onChange={() => toggleFilter('categories', category)} /></>
+                  onChange={() => toggleFilter('categories', category)}
+                />
+              </div>
             ))}
             <label className="title">By Price</label><br />
             {["200-300", "300-400", "400-500", "500-600", "600-700", "700-800", "800-900", "900-1000"].map(priceRange => (
-              <><label key={priceRange}>
-
-                ${priceRange}
-              </label><input
+              <div key={priceRange}>
+                <label>${priceRange}</label>
+                <input
                   type="checkbox"
                   checked={filters.prices.includes(priceRange)}
-                  onChange={() => toggleFilter('prices', priceRange)} /></>
+                  onChange={() => toggleFilter('prices', priceRange)}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -112,14 +119,15 @@ export default function DisplayJob() {
                   <span>Organization: {job.organization}</span>
                   <span>Location: {job.location}</span>
                   <span>Education: {job.education}</span>
-                  <span>Exspanerience: {job.experience}</span>
+                  <span>Experience: {job.experience}</span>
 
                   <div className="text2">
                     <label>Salary: {job.salary}</label>
                     <label>Nature: {job.nature}</label>
                   </div>
-                 {/*  {visibleJobId === job.id && (
-                    <div className="job-info2">
+                  {/* Expanded Job Details *
+                  {visibleJobId === job.id && (
+                    <div className="job-info">
                       <p>Experience: {job.experience}</p>
                       <p><strong>Role:</strong> {job.role}</p>
                       <p>Responsibilities:</p>
@@ -129,8 +137,7 @@ export default function DisplayJob() {
                       <p>Offer:</p>
                       <p>{job.offer}</p>
                     </div>
-                  )}
-                    */}
+                  )}*/}
                 </div>
                 
                 <div className="btn-container">
