@@ -6,7 +6,7 @@ import './App.css';
 import Home from './pages/home';
 import Header from './pages/Header';
 import CategoriesButton from './job/CategoriesButton'; 
-import Apply from './job/apply'; 
+import ApplyForm from './job/apply'; 
 import Accounting from './job/Accounting';
 import Animation from './job/Animation';
 import Finance from './job/Finance';
@@ -18,23 +18,22 @@ import Marketing from './job/Marketing';
 import Companies from './pages/companies';
 import About from './pages/about';
 import Footer from './pages/Footer';
-import SignUp from './pages/signUp';
-import DisplayJob from './job/displayJob'; // Ensure this is the correct path
+import Register from './pages/register';
+import DisplayJob from './job/displayJob';
 import Update from './job/update';
+import LoginForm from './pages/login';
+import UserAcc from './pages/UserAcc';
+import ErrorBoundary from './ErrorBoundary';
 
 const App = () => {
     const location = useLocation();
-    
-    // Determine if the current page is a special page
-    const isSpecialPage = 
-        location.pathname === '/signUp' || 
-        location.pathname.startsWith('/apply') || 
-        location.pathname.startsWith('/about') || 
-        location.pathname === '/update';
+
+    const specialPages = ['/register', '/apply', '/about', '/update', '/UserAcc'];
+
+    const isSpecialPage = specialPages.some(page => location.pathname.startsWith(page));
 
     return (
         <>
-            {/* Conditional rendering of Header and CategoriesButton */}
             {!isSpecialPage && (
                 <>
                     <Header />
@@ -43,35 +42,36 @@ const App = () => {
             )}
             <div className="app">
                 <main>
-                    <Routes>
-                        {/* Define routes for the application */}
-                        <Route path="/" element={<Home />} />
-                        <Route path="/displayJob/:jobId" element={<DisplayJob />} /> 
-                        <Route path="/apply/:jobId" element={<Apply />} />
-                        <Route path="/Accounting" element={<Accounting />} />
-                        <Route path="/Animation" element={<Animation />} />
-                        <Route path="/Finance" element={<Finance />} />
-                        <Route path="/Development" element={<Development />} />
-                        <Route path="/Management" element={<Management />} />
-                        <Route path="/Graphics" element={<Graphics />} />
-                        <Route path="/HRM" element={<HRM />} />
-                        <Route path="/Marketing" element={<Marketing />} />
-                        <Route path="/companies" element={<Companies />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/signUp" element={<SignUp />} />
-                        <Route path="/update" element={<Update />} />
-                        {/* Redirect to Home for all other paths */}
-                        <Route path="*" element={<Navigate to="/" replace />} />
-                    </Routes>
+                    <ErrorBoundary>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/displayJob/:jobId" element={<DisplayJob />} />
+                            <Route path="/apply/:jobId" element={<ApplyForm />} />
+                            <Route path="/apply" element={<ApplyForm />} />
+                            <Route path="/Accounting" element={<Accounting />} />
+                            <Route path="/Animation" element={<Animation />} />
+                            <Route path="/Finance" element={<Finance />} />
+                            <Route path="/Development" element={<Development />} />
+                            <Route path="/Management" element={<Management />} />
+                            <Route path="/Graphics" element={<Graphics />} />
+                            <Route path="/HRM" element={<HRM />} />
+                            <Route path="/Marketing" element={<Marketing />} />
+                            <Route path="/companies" element={<Companies />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/register" element={<Register />} />
+                            <Route path="/login" element={<LoginForm />} />
+                            <Route path="/update" element={<Update />} />
+                            <Route path="/UserAcc" element={<UserAcc />} />
+                            <Route path="*" element={<Navigate to="/" replace />} />
+                        </Routes>
+                    </ErrorBoundary>
                 </main>
-                {/* Conditionally render Footer */}
                 {!isSpecialPage && <Footer />}
             </div>
         </>
     );
 };
 
-// Wrapping the App component with Router
 const AppWithRouter = () => (
     <Router>
         <App />

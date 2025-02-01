@@ -1,0 +1,63 @@
+.cv-container1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 10%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 85pc;
+  height: 100pc;
+  margin: auto;
+  font-size: xx-large;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: start;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 100%;
+  height: 20pc;
+}
+
+.User-Inof {
+  width: 74%;
+  text-align: start;
+}
+
+.User-Inof p {
+  font-size: 27px;
+  margin: 0;
+  text-align: start;
+  position: relative;
+  top: 75px;
+}
+
+.profile-image1 {
+  border-radius: 50%;
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Adjust size as needed */
+  object-fit: cover; 
+  margin-bottom: 10px;
+  background-color: #dfd2da;
+}
+
+.extra-info {
+  width: 100%;
+  background-color: #007bff;
+  text-align: start;
+  align-items: start;
+}
+
+.extra-info section {
+  width: 100%; /* Ensure sections take full width */
+  text-align: start;
+  margin-bottom: 15px; /* Add some space between sections */
+}
+

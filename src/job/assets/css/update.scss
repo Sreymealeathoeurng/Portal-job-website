@@ -1,0 +1,107 @@
+.update-container {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0); /* White text */
+    padding: 20px;
+    height: 110pc; /* Full height */
+    font-size: large;
+    font-weight: 10px;
+    width:100%;
+   
+
+  
+
+
+  }
+  
+  .user-form {
+    width: 100%;
+    height: 90%;
+    max-width: 900px;
+    background-color: #eff2f5; /* Slightly lighter background for the form */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
+    position: relative;
+    top: 40px;
+    padding: 20px;
+  }
+  .location option{
+    width: 100%;
+    height: 100px;
+  }
+  
+ 
+  
+  .fill-box {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
+  
+  .first-fill {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .small-picture {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .input-full-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-gender {
+    margin-top: 10px;
+  }
+  
+  .input-box {
+    margin-top: 10px;
+  }
+  .input-box label{
+    font-size: 20px;
+    color: black;
+  }
+  .editlevelEducation select,
+  .editLocation select{
+    width: 70%;
+    height: 50px;
+    margin: 10px;
+  }
+ 
+  .input-box button,
+  .input-gender button{
+    width: 30%;
+    margin: 10px;
+    color: black;
+    border: 2px solid black; /* Add border property separately */
+    border-radius: 10px; /* Correctly set border-radius */
+    background-color: rgb(255, 255, 255);
+    padding: 10px; /* Optional: add padding for better appearance */
+    cursor: pointer; /* Optional: change cursor on hover */
+    transition: background-color 0.3s; /* Optional: add transition for hover effect */
+}
+
+
+  .button {
+    margin: 5px;
+  }
+ 
+  .save-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #35514b; /* Darker shade on hover */
+  }

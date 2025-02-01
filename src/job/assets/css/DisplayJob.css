@@ -9,7 +9,7 @@
     margin-bottom: 30px;
     width: 100%;
     overflow: hidden;
-    height: 120vh;
+    height: 130vh;
     background-color: rgb(136, 122, 122);
     color: var(--gray);
     display: flex;
@@ -22,7 +22,7 @@
 
 .big-block {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1700px;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
@@ -83,12 +83,14 @@
 }
 .text span{
     text-align: start;
-    margin:2px;
-    color:rgb(110, 46, 170);
+    margin:15px;
+    color:rgb(126, 61, 186);
     font-style: none;
     display: flex;
+    flew-direction: row;
     align-item: start;
-    flex-direction: row;
+    
+ 
 
 }
 

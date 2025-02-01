@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import './assets/css/apply.css';
+import React, { useState, useEffect } from 'react';
+import './assets/css/update.scss';
 
 const Update = ({ onFileUpload, userData, onSave = () => {} }) => {
   const initialData = userData ? {
+    image: userData.image || '',
     firstName: userData.firstName || '',
     lastName: userData.lastName || '',
     gender: userData.gender || '',
@@ -19,6 +20,14 @@ const Update = ({ onFileUpload, userData, onSave = () => {} }) => {
   } : {};
 
   const [formData, setFormData] = useState(initialData);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    if (userData) {
+      setFormData(initialData);
+      setSelectedImage(userData.image);
+    }
+  }, [userData]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,6 +38,8 @@ const Update = ({ onFileUpload, userData, onSave = () => {} }) => {
     const file = e.target.files[0];
     if (file) {
       onFileUpload(file);
+      const imageUrl = URL.createObjectURL(file);
+      setSelectedImage(imageUrl);
     }
   };
 
@@ -40,83 +51,175 @@ const Update = ({ onFileUpload, userData, onSave = () => {} }) => {
     setFormData((prevData) => ({ ...prevData, livingStatus: status }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onSave(formData);
-    alert('File is saved!'); // Alert when saving data
+    if (!formData.firstName || !formData.lastName || !formData.email) {
+      alert('Please fill out all required fields.');
+      return;
+    }
+
+    // Send data to the server
+    const response = await fetch('http://localhost:5000/update', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert('Data is saved!');
+      onSave(formData);
+    } else {
+      alert('Failed to save data.');
+    }
   };
 
   return (
-    <form id="userForm" onSubmit={handleSubmit} style={{ width: '90%', maxWidth: '900px', border: '1px solid #ccc', padding: '20px', margin: '20px auto', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
-      <header>
-        <p>ព័ត៍មាន​ផ្ទាល់ខ្លួន</p>
-      </header>
-      <div className="fill-box">
-        <div className="first-fill">
-          <div className="first-fill1">
+    <div className="update-container">
+      <form onSubmit={handleSubmit} className="user-form">
+        <header>
+          <p>Personal Information</p>
+        </header>
+        <div className="fill-box">
+          <div className="first-fill">
             <div className="small-picture">
-              <input type="file" id="file-upload" name="file-upload" onChange={handleFileChange} />
+              <input
+                type="file"
+                id="file-upload"
+                name="file-upload"
+                onChange={handleFileChange}
+              />
+              {selectedImage && (
+                <img src={selectedImage} alt="Selected" className="profile-image" />
+              )}
             </div>
+          </div>
+          <div className="second-fill">
             <div className="input-full-name">
-              <input id="first-name" name="firstName" type="text" placeholder="នាមខ្លួន" value={formData.firstName} onChange={handleChange} />
-              <input id="last-name" name="lastName" type="text" placeholder="នាមត្រកូល" value={formData.lastName} onChange={handleChange} />
+              <label>First Name:</label>
+              <input
+                name="firstName"
+                type="text"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+              />
+              <label>Last Name:</label>
+              <input
+                name="lastName"
+                type="text"
+                placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="input-gender" style={{ display: 'flex', flexDirection: 'column' }}>
+              <label>Gender: <span>{formData.gender}</span></label>
+              <div className="gender-btn">
+                <button type="button" onClick={() => handleGenderChange('Male')} style={{ width: '45%', margin: '20px' }}>Male</button>
+                <button type="button" onClick={() => handleGenderChange('Female')} style={{ width: '45%' }}>Female</button>
+              </div>
+            </div>
+            <label>Date of Birth:</label>
+            <input
+              name="dateOfBirth"
+              type="date"
+              value={formData.dateOfBirth}
+              onChange={handleChange}
+            />
+            <label>Nationality:</label>
+            <input
+              name="nationality"
+              type="text"
+              placeholder="Nationality"
+              value={formData.nationality}
+              onChange={handleChange}
+            />
+            <label>Email:</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <label>Phone Number:</label>
+            <input
+              name="phone"
+              type="text"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+            <div className="editLocation">
+            <label>Location:</label>
+            <select name="location" value={formData.location} onChange={handleChange} className='locationInput'>
+              <option hidden value="">Select Location</option>
+              <option value="Phnom Penh">Phnom Penh</option>
+              <option value="Kampong Speu">Kampong Speu</option>
+              <option value="Takeo">Takeo</option>
+              <option value="Kampong Chhnang">Kampong Chhnang</option>
+              <option value="Kampot">Kampot</option>
+            </select>
+
+            </div>
+           
+            <label>Address:</label>
+            <input
+              name="address"
+              type="text"
+              placeholder="Address"
+              value={formData.address}
+              onChange={handleChange}
+            />
+            <div className="editlevelEducation">
+            <label>Education Level:</label>
+            <select name="educationLevel" value={formData.educationLevel} onChange={handleChange} className='levelEducation'>
+              <option hidden value="">Select Education Level</option>
+              <option value="High School">High School</option>
+              <option value="Associate's Degree">Associate's Degree</option>
+              <option value="Vocational">Vocational</option>
+              <option value="Bachelor's Degree">Bachelor's Degree</option>
+              <option value="Master's Degree">Master's Degree</option>
+              <option value="Doctorate">Doctorate</option>
+            </select>
+            </div>
+      
+            <label>Current Position:</label>
+            <input
+              name="currentPosition"
+              type="text"
+              placeholder="Current Position"
+              value={formData.currentPosition}
+              onChange={handleChange}
+            />
+            <label>Experience (Years):</label>
+            <input
+              name="experienceYears"
+              type="text"
+              placeholder="Experience (Years)"
+              value={formData.experienceYears}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="third-fill">
+            <label>Living Situation: <span>{formData.livingStatus}</span></label>
+            <div className="input-box">
+              <button type="button" onClick={() => handleLivingStatusChange('Living Alone')}>Living Alone</button>
+              <button type="button" onClick={() => handleLivingStatusChange('Living Together')}>Living Together</button>
+              <button type="button" onClick={() => handleLivingStatusChange('Living with Relatives')}>Living with Relatives</button>
             </div>
           </div>
-          <div className="first-fill2">
-            <label>ភេទ</label>
-            <div id="gender" className="input-gender">
-              <button type="button" onClick={() => handleGenderChange('ប្រុស')}>ប្រុស</button>
-              <button type="button" onClick={() => handleGenderChange('ស្រី')}>ស្រី</button>
-              <span>{formData.gender}</span>
-            </div>
-          </div>
         </div>
-        <div className="second-fill">
-          <input id="date" name="dateOfBirth" type="date" value={formData.dateOfBirth} onChange={handleChange} />
-          <input id="nationality" name="nationality" type="text" placeholder="សញ្ជាតិ" value={formData.nationality} onChange={handleChange} />
-          <input id="email" name="email" type="email" placeholder="អ៊ីម៊ែល" value={formData.email} onChange={handleChange} />
-          <input id="Tel" name="phone" type="text" placeholder="លេខទូរស័ព្ទ" value={formData.phone} onChange={handleChange} />
-          <select id="location" name="location" value={formData.location} onChange={handleChange}>
-            <option hidden value="">ទីតាំង</option>
-            <option value="ភ្នំពេញ">ភ្នំពេញ</option>
-            <option value="កំពង់ស្ពឺ">កំពង់ស្ពឺ</option>
-            <option value="តាកែវ">តាកែវ</option>
-            <option value="កំពង់ឆ្នាំង">កំពង់ឆ្នាំង</option>
-            <option value="កំពត">កំពត</option>
-          </select>
-          <input id="address" name="address" type="text" placeholder="អាស័យដ្ឋាន" value={formData.address} onChange={handleChange} />
-          <select id="education" name="educationLevel" value={formData.educationLevel} onChange={handleChange}>
-            <option hidden value="">កម្រិតអប់រំ</option>
-            <option value="វិទ្យាល័យ">វិទ្យាល័យ</option>
-            <option value="បរិញ្ញាបត្ររង">បរិញ្ញាបត្ររង</option>
-            <option value="វិជ្ជាជីវៈ">វិជ្ជាជីវៈ</option>
-            <option value="បរិញ្ញាបត្រ">បរិញ្ញាបត្រ</option>
-            <option value="អនុបណ្ឌិត">អនុបណ្ឌិត</option>
-            <option value="បណ្ឌិត">បណ្ឌិត</option>
-          </select>
-          <input id="currentPosition" name="currentPosition" type="text" placeholder="មុខតំណែងបច្ចុប្បន្ន" value={formData.currentPosition} onChange={handleChange} />
-          <input id="experience" name="experienceYears" type="text" placeholder="បទពិសោធន៍(ឆ្នាំ)" value={formData.experienceYears} onChange={handleChange} />
+        <div className="save-box">
+          <button type="submit">Save</button>
         </div>
-        <div className="third-fill">
-          <label>ស្ថានភាពរស់នៅ</label>
-          <div id="situation" className="input-box">
-            <button type="button" onClick={() => handleLivingStatusChange('រស់នៅដោយខ្លួនឯង')}>
-              រស់នៅដោយខ្លួនឯង
-            </button>
-            <button type="button" onClick={() => handleLivingStatusChange('រស់នៅជាមួយគ្នា')}>
-              រស់នៅជាមួយគ្នា
-            </button>
-            <button type="button" onClick={() => handleLivingStatusChange('នៅគាត់')}>
-              នៅគាត់
-            </button>
-          </div>
-          <span>ស្ថានភាព: {formData.livingStatus}</span>
-        </div>
-      </div>
-      <div className="save-box">
-        <button type="submit">រក្សាទុក</button>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 

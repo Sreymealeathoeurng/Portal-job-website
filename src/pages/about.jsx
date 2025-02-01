@@ -5,53 +5,34 @@ import './assets/sass/about.scss';
 import ruppImage from './assets/img/rupp.jpg'; 
 import fe from './assets/img/fe.png';
 import ite from './assets/img/ite.png';  
-import img1 from './assets/img/mealea.jpg'; // Ensure the image path is correct
-import img2 from './assets/img/chata.jpg'; // Ensure the image path is correct
-import img3 from './assets/img/lin.jpg'; // Ensure the image path is correct
-import img4 from './assets/img/hong.jpg'; // Ensure the image path is correct
+import img1 from './assets/img/mealea.jpg'; 
+import img2 from './assets/img/chata.jpg'; 
+import img3 from './assets/img/lin.jpg'; 
+import img4 from './assets/img/hong.jpg'; 
+
 const About = () => {
-    // Function to open the Royal University of Phnom Penh website
     const openRuppWebsite = () => {
         window.open("https://www.rupp.edu.kh/", "_blank");
     };
 
-    // Function to open the Faculty of Engineering website
     const openFeWebsite = () => {
         window.open("https://www.fe.rupp.edu.kh/", "_blank");
     };
 
-    // Function to open the specific program page
     const openIteWebsite = () => {
         window.open("https://www.fe.rupp.edu.kh/program/7", "_blank");
     };
 
     const teamMembers = [
-        {
-            name: 'Thoeurng sreymealea',
-            experience: 'Student of IT Engineering',
-            imageUrl: img1, // Use imported image
-        },
-        {
-            name: 'CHUM SOCHEATA',
-            experience: 'Student of IT Engineering',
-            imageUrl: img2, // Replace with actual image URL
-        },
-        {
-            name: 'KOUN SOKHALIN',
-            experience: 'Student of IT Engineering',
-            imageUrl: img3, // Replace with actual image URL
-        },
-        {
-            name: 'Kim Ehong',
-            experience: 'Student of IT Engineering',
-            imageUrl: img4, // Replace with actual image URL
-        },
+        { name: 'Thoeurng Sreymealea', experience: 'Student of IT Engineering', imageUrl: img1 },
+        { name: 'Chum Socheata', experience: 'Student of IT Engineering', imageUrl: img2 },
+        { name: 'Koun Sokhalin', experience: 'Student of IT Engineering', imageUrl: img3 },
+        { name: 'Kim Ehong', experience: 'Student of IT Engineering', imageUrl: img4 },
     ];
 
     return (
         <>
-            <Header showBackgroundImg={false} showContent={false} />
-          
+            <Header showBackgroundImg={false} />
             <div className="stars">
                 {[...Array(50)].map((_, index) => (
                     <div key={index} className="star"></div>
@@ -105,7 +86,7 @@ const About = () => {
                 
             </div>
             <div className="teamSection">
-                <h1 style={{position: 'relative',top: '20pc'}}>Meet Our Team</h1>
+                <h1 style={{ position: 'relative', top: '20pc' }}>Meet Our Team</h1>
                 <div className="teamMembers">
                     {teamMembers.map((member, index) => (
                         <div className="teamMember" key={index}>

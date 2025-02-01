@@ -14,7 +14,7 @@ body {
 }
 
 /* Menu styles */
-.menu {
+#menu {
   position: fixed;
   top: 10px;
   right: 70px;
@@ -23,6 +23,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   z-index: 1000;
+  background-color:rgb(13, 13, 13);
+
 }
 
 /* Logo styles */
@@ -204,6 +206,7 @@ body {
   height: 70%;
   background-color: #003F6B;
 }
+
 
 .search-field select option {
   background-color: #ffffff;
@@ -411,9 +414,11 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   z-index: 1000;
+  
 }
 
 /* Menu list styles */
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -486,16 +491,14 @@ h1 {
 }
 
 /* Text content styles */
-.text-content {
+.top-text-content {
   width: 70%;
   height: 100%;
-  position: absolute;
-  top: 0;
   margin-left: 15%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: -30pc;
+  top: 22pc;
   color: #fff;
   left: 40px;
   font-family: "Arima", sans-serif;
@@ -752,6 +755,27 @@ h1 {
 .contact-form button:hover {
   background-color: #a67327;
 }
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease;
+  background-color: transparent; /* Initial background */
+  z-index: 1000; 
+}
+
+.navbar .scrolled {
+  background-color: rgba(231, 206, 206, 0.9); /* Change to a solid color when scrolled */
+  box-shadow: 0 2px 5px rgba(71, 61, 61, 0.1); /* Optional shadow effect */
+}
+
+.menu-contain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px; /* Adjust height as needed */
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -773,9 +797,6 @@ h1 {
       margin-top: 200px; /* Adjust margin for smaller screens */
   }
 }
-
-
-
 /* Responsive styles */
 @media (max-width: 768px) {
   .menu ul {

@@ -1,0 +1,98 @@
+
+.apply-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+padding:20px;
+
+
+}
+#apply-form{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 25px;
+  border: 2px solid black;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 10px;
+  height: 10px; 
+}
+
+
+.header h1 {
+  margin: 0;
+}
+
+.profile-image {
+  width: 157px;
+  height:157px;
+
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: rgb(233, 229, 229);
+  text-align: center;
+}
+
+.work-profile, .contact-info, .education-info, .projects-info, .work-experience-info {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #34495e;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#submitbtn {
+  background-color:rgb(29, 74, 103);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submitbtn:hover {
+  background-color: #d35400;
+}
+.alert{
+  align-items: center;
+  position: absolute;
+  top: 30pc;
+}
